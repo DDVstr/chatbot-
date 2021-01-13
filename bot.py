@@ -1,0 +1,1 @@
+import telebot import chatbot bot = telebot.TeleBot(chatbot.TOKEN)@bot.message_handler(content_types=['text'])def botresponse(message):    bot.send_message(message.chat.id, message.text)bot.polling(none_stop =True )
